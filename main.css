@@ -1,0 +1,169 @@
+body *{
+    background-color: #a4b1ce;
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+}
+
+.border-box{
+    border: 2px solid #354e60;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.indicator-box{
+    background: #77aacd;
+    width: 40px;
+    height: 25px;
+}
+
+.active{
+    background: #a74c4c;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    height: 80vh;
+    width: 100%;
+    gap: 20px;
+}
+
+.input-indicator-section{
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.brewer-quantity-input{
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    align-items: center;
+}
+
+.brewer-quantity-input button{
+    width: 50%;
+    background-color: #5f7e94;
+}
+
+.brewer-input{
+    align-items: center;
+    width: 50%;
+    margin-right: 5%;
+    justify-content: space-between;
+    height: 50%;
+    gap: 10px;
+}
+
+.input-box{
+    padding: 3px;
+    flex-direction: column;
+}
+
+.coffee-brewer{
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.range-slider{
+    flex-direction: column;
+    width: 100%;
+}
+
+.slider{
+    width: 80%;
+    height: 15px;
+    background-color: #354e60;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 8px;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 15px;
+    background-color: #a4b1ce;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb{
+    width: 10px;
+    height: 15px;
+    background-color: #a4b1ce;
+    cursor: pointer;
+}
+
+.ingerdiant-indicator{
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    height: 50%;
+}
+
+.process-section{
+    width: 50%;
+}
+
+.process{
+    flex-direction: column;
+    height: 86%;
+    padding: 3px;
+    gap: 10px;
+    width: 100%;
+}
+
+.minimum-indicator{
+    height: 20%;
+    gap: 10px;
+}
+
+.process-mid-section{
+    height: 50%;
+}
+
+.slider-col input{
+    transform: rotate(90deg);
+    width: 150px;
+}
+.slider-volumes{
+    height: 100%;
+}
+
+.volume-indicator{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+.process-indicator{
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.display-results{
+    gap: 20px;
+}
+
+.display{
+    width: 40px;
+    height: 15px;
+    background-color: #fff;
+    padding-left: 2px;
+}
+
+.power-button{
+    text-align: center;
+    padding-bottom: 10px;
+}

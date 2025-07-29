@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Machine</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container flex">        
+        <div class="input-indicator-section flex">
+            <section class="coffee-brewer border-box flex">
+                <div class="brewer-quantity-input flex">
+                    <button class="border-box" id="cup">1 Cup</button>
+                    <button class="border-box" id="carafe">1 Carafe</button>
+                    <button class="border-box" id="refill">Refill</button>
+                </div>
+    
+                <div class="brewer-input border-box flex" id="drink">
+                    <div class="flex input-box">
+                        <span>Coffee</span>
+                        <input type="radio" value="coffee" name="drink" id="coffee">
+                    </div>
+                    <div class="flex input-box">
+                        <span>Hot Water</span>
+                        <input type="radio" value="hot-water" name="drink" id="hot-water">
+                    </div>
+                    <div class="flex input-box">
+                        <span>Latte</span>
+                        <input type="radio" value="latte" name="drink" id="latte">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="ingerdiant-indicator flex border-box">
+                <div>
+                    <span>Water Level</span>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="50" class="slider border-box" id="water-slider">
+                        <span id="water-level-display">50</span>
+                    </div>
+                </div>
+                <div>
+                    <span>Bean Level</span>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="50" class="slider border-box" id="bean-slider">
+                        <span id="bean-level-display">50</span>
+                    </div>
+                </div>
+                <div>
+                    <span>Milk Level</span>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="50" class="slider border-box" id="milk-slider">
+                        <span id="milk-level-display">50</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="process-section flex">
+            <section class="process flex border-box">
+                <div class="minimum-indicator flex">
+                    <div>
+                        <span>Low Water</span>
+                        <div class="indicator-box border-box"></div>
+                    </div>
+                    <div>
+                        <span>Low Bean</span>
+                        <div class="indicator-box border-box"></div>
+                    </div>
+                    <div>
+                        <span>Low Milk</span>
+                        <div class="indicator-box border-box"></div>
+                    </div>
+                </div>
+                
+                <div class="process-mid-section flex">
+                    <div class="slider-volumes flex">
+                        <div class="flex volume-indicator">
+                            <span>Chamber</span>
+                            <div class="range-slider slider-col">
+                                <input type="range" min="0" max="100" value="0" class="slider border-box" id="chamber">
+                                <span id="chamber-level">0</span>
+                            </div>
+                        </div>
+                        <div class="flex volume-indicator">
+                            <span>Dispenser</span>
+                            <div class="range-slider slider-col">
+                                <input type="range" min="0" max="100" value="0" class="slider border-box" id="dispenser">
+                                <span id="dispenser-level">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-indicator flex column">
+                        <div>
+                            <span>Purging</span>
+                            <div class="border-box indicator-box" id="purging-indicator"></div>
+                        </div>
+                        <div>
+                            <span>Heating</span>
+                            <div class="border-box indicator-box" id="heating-indicator"></div>
+                        </div>
+                        <div>
+                            <span>Grinding</span>
+                            <div class="border-box indicator-box" id="grinding-indicator"></div>
+                        </div>
+                        <div>
+                            <span>Brewing</span>
+                            <div class="border-box indicator-box" id="brewing-indicator"></div>
+                        </div>
+                        <div>
+                            <span>Dispensing</span>
+                            <div class="border-box indicator-box" id="dispensing-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="display-results flex">
+                    <div class="flex column">
+                        <span>Elapsed Time</span>
+                        <div class="display border-box" id="elapsed-time">00:00</div>
+                    </div>
+                    <div class="flex column">
+                        <span>Total Cups</span>
+                        <div class="display border-box" id="total-cups">38</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="power-button">
+        <button id="power">ON</button>
+        <span>Power</span>
+    </div>
+    <script src="index.js">  </script>
+</body>
+</html>
